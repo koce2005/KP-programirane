@@ -54,7 +54,7 @@ namespace KP_programirane
                     Pen penpen = new Pen(Brushes.Black);
                     g.DrawPolygon(penpen, points);
                 }
-                Thread.Sleep(4000);
+                Thread.Sleep(3000);
             }
 
         }
