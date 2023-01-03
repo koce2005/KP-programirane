@@ -12,6 +12,7 @@ namespace KP_programirane
             Thread t = new Thread(Rectangle);
             t.Start();
         }
+
         private void Rectangle()
         {
             for (int i = 0; i < 50; i--)
