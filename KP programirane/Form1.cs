@@ -55,6 +55,7 @@ namespace KP_programirane
                     g.DrawPolygon(penpen, points);
                 }
                 Thread.Sleep(3000);
+
             }
             
         }
