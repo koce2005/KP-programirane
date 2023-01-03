@@ -76,7 +76,7 @@ namespace KP_programirane
                 Graphics g = this.CreateGraphics();
                 Pen penpen = new Pen(Brushes.Black);
                 g.DrawEllipse(penpen, x, y, size, size);
-                Thread.Sleep(2000);
+                Thread.Sleep(3000);
             }
 
         }
