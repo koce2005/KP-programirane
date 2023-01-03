@@ -6,7 +6,7 @@ namespace KP_programirane
         {
             InitializeComponent();
         }
-       
+
         private void button1_Click(object sender, EventArgs e)
         {
             Thread t = new Thread(Rectangle);
@@ -56,9 +56,28 @@ namespace KP_programirane
                 }
                 Thread.Sleep(3000);
             }
+            
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Thread t = new Thread(Circle);
+            t.Start();
+        }
+        private void Circle()
+        {
+            for (int i = 0; i < 50; i--)
+            {
+                Random rand = new Random();
+                Pen pen = new Pen(Brushes.Black);
+                int size = rand.Next(50, 200);
+                int x = rand.Next(0, this.ClientSize.Width - size);
+                int y = rand.Next(0, this.ClientSize.Height - size);
+                Graphics g = this.CreateGraphics();
+                Pen penpen = new Pen(Brushes.Black);
+                g.DrawEllipse(penpen, x, y, size, size);
+                Thread.Sleep(2000);
+            }
 
         }
-
-
     }
 }
